@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f1f1f1;
+}
+
+ul,
+li,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+p {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+input {
+  outline: none;
+  border: none;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.clear-fix:after {
+  display: table;
+  content: '';
+  clear: both;
+}
+
+a {
+  text-decoration: none;
+}
