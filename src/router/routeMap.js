@@ -6,8 +6,8 @@ import City from '../containers/City'
 import User from '../containers/User'
 import Search from '../containers/Search'
 import Detail from '../containers/Detail'
+import Login from '../containers/Login'
 import NotFound from '../containers/404'
-
 
 class RouterMap extends Component {
   render() {
@@ -18,8 +18,10 @@ class RouterMap extends Component {
           <Route exact path='/' component={Home}></Route>
           <Route path='/city' component={City}></Route>
           <Route path='/user' component={User}/>
-          <Route path='/search/:type(/:keyword)' component={Search}/>
+          <Route path='/search/:category' component={Search}/>
+          <Route path='/searchall/:keyword?' component={Search}/>
           <Route path='/detail/:id' component={Detail}/>
+          <Route path='/login/:router?' component={Login}/>
           <Route path='*' component={NotFound}/>
         </Switch>
       </div>

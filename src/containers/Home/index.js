@@ -8,7 +8,6 @@ import List from './subpage/List'
 class Home extends React.Component {
 
   render() {
-    console.log(this.props.userinfo)
     return (
       <div>
         <HomeHeader cityName={this.props.userinfo.cityName}/>
